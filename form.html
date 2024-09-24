@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="connect.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="title">Famous Philosophical Movements</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="content.html">Content</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="form.html" class="active">Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-box">
+            <section>
+                <h1>Form</h1>
+                <p>Hello! Please let us know which movement interested you the most.</p>
+                <div class="form-container p-4 border rounded bg-light d-flex flex-row">
+                    <div class="form-content flex-grow-1 me-4">
+                        <form action="mailto:ayla.ibragim8@gmail.com" method="POST" enctype="text/plain">
+                            <div class="mb-3">
+                                <label for="first-name" class="form-label">First Name:</label>
+                                <input type="text" class="form-control" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="movement" class="form-label">Choose a movement:</label>
+                                <select class="form-select" id="movement" name="movement" required>
+                                    <option value="absurdism">Absurdism</option>
+                                    <option value="existentialism" >Existentialism</option>
+                                    <option value="nihilism"  >Nihilism</option>
+                                    <option value="none" >None</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <p>Why that movement?</p>
+                                <textarea class="form-control" id="reason" name="reason" rows="4" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <p>Have you ever been interested in Philosophy before?</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="interested" value="yes" id="interestedYes">
+                                    <label class="form-check-label" for="interestedYes">Yes</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="interested" value="no" id="interestedNo">
+                                    <label class="form-check-label" for="interestedNo">No</label>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <button type="reset" class="btn btn-danger">Reset Form</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="image-container">
+                        <img src="cat.jpg" class="img-fluid" alt="image of a kitty laying son a book">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">Contact Information</div>
+            <p>ayla.ibragim8@gmail.com</p>
+            <div class="buttons">
+                <a href="https://www.instagram.com/fyoomi/" target="_blank" class="btn">
+                    <img src="instagram.png" alt="Instagram" width="20">
+                </a>
+                <a href="https://t.me/evang3lion" target="_blank" class="btn">
+                    <img src="telegram.png" alt="Telegram" width="20">
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
